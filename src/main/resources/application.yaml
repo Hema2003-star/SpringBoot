@@ -1,0 +1,9 @@
+spring:
+ datasource:
+  url: jdbc:mysql://localhost:3306/cloud_vendor?useSSL=false
+  username: root
+  password: tiger
+
+
+#jpa settings
+spring.jpa.hibernate.ddl_auto: create
