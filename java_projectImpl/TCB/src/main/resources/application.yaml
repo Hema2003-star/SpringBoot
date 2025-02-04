@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/tele_com?useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: tiger
+
+# JPA settings
+spring.jpa.hibernate.ddl-auto: update
+spring.jpa.database-platform: org.hibernate.dialect.MySQL8Dialect
+
+
+server:
+ port:9191 
+ 
+spring1:
+ kafka:
+  producer:
+   bootstrap-servers:localhost:9092		
+   
+spring2 :
+ kafka:
+  consumer:
+   bootstrap-servers:localhost:9092	
+   groupId = group
